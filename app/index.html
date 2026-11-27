@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrueTag — Black Friday deals, checked by hand</title>
+<meta name="description" content="34 real Black Friday 2026 deals, each price-checked at its store on Nov 27, 2026, with an honest verdict on whether it is really a deal.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23ff4b2e'/%3E%3Cpath d='M9 17l5 5 9-11' stroke='white' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/"><span class="brand-mark">✓</span> TRUETAG</a>
+  <p class="topbar-note">Every price checked by hand · Fri Nov 27, 2026</p>
+</header>
+
+<main id="home-view">
+  <section class="hero">
+    <p class="hero-kicker">BLACK FRIDAY 2026 · LIVE &amp; CHECKED</p>
+    <h1>Real deals.<br>Checked prices.<br>No sticker tricks.</h1>
+    <p class="hero-sub">We read the price of every deal below at its store today — sale price, usual price, and an honest verdict on whether the "deal" is real. <strong id="hero-count">34 deals</strong> across Amazon, Best Buy, Walmart and Target.</p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num" id="stat-deals">34</span><span class="stat-label">deals checked today</span></div>
+      <div class="stat"><span class="stat-num" id="stat-low">7</span><span class="stat-label">at all-time-low prices</span></div>
+      <div class="stat"><span class="stat-num" id="stat-save">$1,200</span><span class="stat-label">biggest single saving</span></div>
+    </div>
+    <div id="spotlight"></div>
+  </section>
+
+  <section class="controls" aria-label="Search and filters">
+    <label class="search-box">
+      <span class="search-label">Search deals</span>
+      <input id="search" type="search" placeholder="Try “headphones”, “OLED”, “Switch”…" autocomplete="off">
+    </label>
+    <div class="chips" id="category-chips" role="group" aria-label="Category"></div>
+    <div class="selects">
+      <label>Store
+        <select id="store-filter">
+          <option value="all">All stores</option>
+          <option value="amazon">Amazon</option>
+          <option value="bestbuy">Best Buy</option>
+          <option value="walmart">Walmart</option>
+          <option value="target">Target</option>
+        </select>
+      </label>
+      <label>Discount
+        <select id="discount-filter">
+          <option value="0">Any discount</option>
+          <option value="25">25% off or more</option>
+          <option value="40">40% off or more</option>
+          <option value="50">50% off or more</option>
+        </select>
+      </label>
+      <label>Sort
+        <select id="sort-select">
+          <option value="best">Best first</option>
+          <option value="pct">Biggest % off</option>
+          <option value="saved">Most $ saved</option>
+          <option value="cheap">Lowest price</option>
+        </select>
+      </label>
+    </div>
+  </section>
+
+  <p class="result-line" id="result-line"></p>
+  <section id="grid"></section>
+
+  <section class="how">
+    <h2>How TrueTag checks a deal</h2>
+    <p>Every listing was read today at the store named on the card, or in a deals source that names the store — the source and check time sit on each card. The verdict is ours and it is blunt: <strong>ALL-TIME LOW</strong> means trackers confirm the lowest price ever; <strong>STRONG DEAL</strong> means a deep cut versus the usual price; <strong>FAIR PRICE</strong> means the saving is real but routine — a few of those are listed on purpose, so you can see we are not just stamping everything "amazing". Prices move fast on Black Friday; if a store page disagrees with a card, the store page wins.</p>
+  </section>
+</main>
+
+<main id="detail-view" hidden></main>
+
+<footer>
+  <p>TrueTag is an independent deal finder. Store links open the product (or its store search) at the retailer named. Prices checked Fri Nov 27, 2026, 18:15 UTC; Black Friday sales end between Nov 28 and Dec 2 depending on the store.</p>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
